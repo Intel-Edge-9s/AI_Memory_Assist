@@ -112,11 +112,6 @@
       - 사용자의 생활 루틴 관련 이벤트 API
     </td>
   </tr>
-  <tr>
-    <td align="center">그리드 맵 기반 실시간 제어</td>
-    <td align="center">작업 이력 관리 및 실시간 재고 현황</td>
-    <td align="center">MariaDB 기반 테이블 구조</td>
-  </tr>
 </table>
 
 * **멀티 로봇 모니터링:** 2대의 로봇 상태(위치, 배터리, 현재 작업)를 그리드 맵 기반 UI에서 실시간으로 확인합니다.
