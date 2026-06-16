@@ -1,6 +1,6 @@
 
 
-## 🚛 Logistics-Automation-Mini-Project
+## 🚛 AI Remembers You
 
 ### 🛠 개발 배경
 <table>
