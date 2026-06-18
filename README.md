@@ -3,9 +3,9 @@
 
 ### 🛠 개발 배경
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/약복용-이미지-id" width="500" />
+  <img src="https://github.com/user-attachments/assets/9aaacc9e-24b9-4c94-b385-754cd48cf9ab" width="500" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/창문-이미지-id" width="500" />
+  <img src="https://github.com/user-attachments/assets/dc6c195c-be25-43fd-8569-e698e03f2509" width="500" />
 </p>
 
 중앙치매센터(증가하는 초기 치매 환자 통계), 보건복지부(치매 시장 확장 전망) 통계와 약 오용 문제 사례 등의 조사를 통해, 저희는 일상 데이터를 기반으로 한 개인화 서비스의 중요성을 실감했습니다.
