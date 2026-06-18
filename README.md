@@ -208,5 +208,5 @@
 |----------|----------|----------|
 | 박준서 | 팀장, BE | DB, API 서버 설계 및 구축, RAG & LLM 혼합 알고리즘, LLM 프롬프트 작성 |
 | 이상현 | 부팀장, FE |  |
-| 안해성 | Robotic Engineering |  |
+| 안해성 | Robotic Engineering | 로봇 AI 학습 및 제어, RAG 파이프라인 초기 개발  |
 | 김준기 | AI Develop |  |
