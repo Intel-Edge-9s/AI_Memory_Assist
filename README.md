@@ -1,5 +1,4 @@
-
-## 🚛 AI Remembers You
+## 🚛 AI, Remembers You
 
 ### 🛠 개발 배경
 
@@ -27,7 +26,7 @@
 ---
 
 ## 📅 프로젝트 개요
-- **프로젝트 명:** ARU (AI Remembers U)
+- **프로젝트 명:** ARU (AI, Remembers U)
 - **수행 기간:** 2026.06.03 ~ 2026.06.15
 - **주요 기능**
   - **1:** LLM 기반 챗봇으로 음성 및 텍스트로 대화하며, 물건들의 위치, 사용자의 행동 정보를 확인 가능
@@ -103,7 +102,85 @@
 
 ---
 
-## 🔍 상세 기능 설명
+## 📱 안드로이드 애플리케이션 (ARU App)
+
+ARU 앱은 고령자 및 초기 치매 환자도 쉽게 사용할 수 있도록 직관적인 UI/UX로 설계되었습니다. Kotlin과 Jetpack Compose를 기반으로 개발되었으며, MVVM 아키텍처를 적용하여 안정적인 성능을 제공합니다.
+
+### 1. 홈 화면 및 사용 방법
+앱의 진입점으로, 사용자가 앱의 주요 기능(기억 찾기, 영상 확인, 루틴 알람 등)을 쉽게 이해하고 바로 접근할 수 있도록 안내합니다.
+<p align="center">
+  <img src="../images/tutorial.jpg" width="30%" alt="홈 화면 및 사용방법" />
+</p>
+
+---
+
+### 2. 기억찾기 (AI 챗봇)
+LLM 및 RAG 기반으로 사용자의 문맥을 기억하여 대화형으로 정보를 제공합니다. 물건의 현재 위치를 이미지와 함께 찾아주거나, 특정 물건이 언제 누구에 의해 이동되었는지 과거의 타임라인을 추적하여 알려줍니다.
+<table align="center">
+  <tr>
+    <td align="center"><b>현재 물건 위치 확인</b></td>
+    <td align="center"><b>과거 이동 기록 (타임라인) 추적</b></td>
+  </tr>
+  <tr>
+    <td><img src="../images/chat_image.jpg" width="300px" alt="물건 위치 확인"></td>
+    <td><img src="../images/chat_log.jpg" width="300px" alt="타임라인 추적"></td>
+  </tr>
+</table>
+
+---
+
+### 3. 오늘일과 (맞춤형 루틴 및 알람)
+사용자의 스케줄(약 복용, 창문 닫기 등)을 관리하고 지정된 시간에 큰 알람 소리와 진동으로 알려줍니다. 오프라인 상태에서도 동작하도록 SharedPreferences를 활용해 로컬에 데이터를 캐싱하며, AI가 사용자의 패턴을 분석해 새로운 루틴을 추천해 줍니다.
+<table align="center">
+  <tr>
+    <td align="center"><b>루틴 목록 및 관리</b></td>
+    <td align="center"><b>새로운 루틴 추천 (Push)</b></td>
+    <td align="center"><b>강력한 루틴 알람 발생</b></td>
+  </tr>
+  <tr>
+    <td><img src="../images/routine.jpg" width="220px" alt="루틴 목록"></td>
+    <td><img src="../images/new_routine.jpg" width="220px" alt="루틴 추천"></td>
+    <td><img src="../images/alert.jpg" width="220px" alt="알람 발생"></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <img src="../images/make_routine.jpg" width="220px" alt="루틴 추가/수정">
+      <br><b>루틴 추가 및 수정 화면</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 4. 물건 현황 모니터링
+엣지 디바이스와 통신하여 지갑, 약통, 열쇠, 리모컨 등 사용자가 자주 잃어버리는 핵심 물건들의 현재 상태와 위치(방 이름)를 실시간 그리드 형태로 한눈에 보여줍니다.
+<p align="center">
+  <img src="../images/objects.jpg" width="30%" alt="물건 현황" />
+</p>
+
+---
+
+### 5. 영상보기 (VOD 및 실시간 LIVE)
+집 안의 특정 카메라(Cam1, Cam2 등)를 선택하여 실시간 라이브 스트리밍을 확인하거나, 특정 날짜와 시간대로 필터링하여 과거에 녹화된 VOD 영상을 재생할 수 있습니다.
+<table align="center">
+  <tr>
+    <td align="center"><b>실시간 LIVE 스트리밍</b></td>
+    <td align="center"><b>과거 VOD 영상 확인</b></td>
+  </tr>
+  <tr>
+    <td><img src="../images/vod_realtime.jpg" width="300px" alt="실시간 영상"></td>
+    <td><img src="../images/vod_past.jpg" width="300px" alt="과거 영상"></td>
+  </tr>
+</table>
+
+---
+
+### ⚙️ 핵심 적용 기술 (Android)
+* **UI/UX:** Jetpack Compose를 활용한 선언형 UI 구현 및 고령자 친화적 대화면/큰 폰트 적용.
+* **Network & Local DB:** Retrofit을 통한 서버 통신 및 SharedPreferences를 활용한 오프라인 환경 대응 (인터넷 끊김 시에도 알람 정상 동작).
+* **Background Processing:** WorkManager를 통해 주기적으로 서버와 루틴 데이터를 백그라운드에서 동기화.
+
+## ⚙️ 핵심 시스템 구현 상세
 **1. REST API SERVER**
 <p align="left">
   <img src="./images/img_api.png" width="60%" alt="Architecture" />
@@ -160,7 +237,21 @@
 * **1분 단위로 저장 됨**
 * **3일 이상이 지난 영상 데이터는 자동 삭제**
 
-**3. 시스템 프롬프트 롤 설정**
+**3. 시스템 프롬프트 롤 설정 및 활용 기술**
+* **활용 기술:** **LM Studio**를 활용하여 로컬 환경에서 LLM을 구동하였으며, 온디바이스 및 엣지 환경에 최적화된 **Gemma (4-bit 양자화 등)** 모델과 **E2B**를 활용해 빠르고 정확한 데이터 분석 파이프라인을 구축했습니다.
+* **의도 분류 (Intent Classification)**
+  * **분류 목적:** 사용자의 질문을 분석하여 의도에 맞는 3가지 카테고리(`REALTIME`, `PAST`, `CHITCHAT`) 중 하나를 판별합니다.
+  * **예외 처리:** 물건 찾기와 무관한 다른 대화는 거절하도록 설계했습니다.
+  * **출력 규칙:** 어떠한 부연 설명이나 특수 기호 없이 오직 판별된 카테고리의 대문자 한 단어만 출력합니다.
+* **상황 추론 및 분석 (Image Analysis & Inference)**
+  * **분석 목적:** 전/후 사진과 이벤트 내용을 비교하여, 상황이 발생한 원인과 과정을 추론합니다.
+  * **추론 원칙:** 동작의 주체는 사람으로 상정하며, 인상착의와 물건의 특징을 묘사합니다.
+  * **출력 규칙:** 어떠한 부연 설명이나 특수 기호 없이 오직 판별된 카테고리의 대문자 한 단어만 출력합니다.
+* **대화 및 응답 생성 (Conversation & Response)**
+  * **대화 목적:** 실시간 및 과거 데이터를 종합하여 최적의 데이터를 제공하여 안내합니다.
+  * **출력 규칙:** 파싱을 위해 지정된 태그 문법을 지키도록 강한 지침을 설정했습니다.
+  * **문맥 제한:** 데이터를 임의로 지어내거나 단순 잡담을 하지 않도록 엄격한 규칙과 답변 예시를 안내합니다.
+
 <table align="center">
   <tr>
     <td><img src="./images/img_prom1.png" width="300px" alt="prompt1"></td>
@@ -182,12 +273,13 @@
   <img src="./images/img_db.png" width="60%" alt="dberd" />
 </p>
 
-**5. 물체 이동 및 DB 업데이트**
+**6. 물체 이동 및 DB 업데이트**
 <p align="left">
   <img src="./images/img_screenshot_result_robot.jpg" width="60%" alt="dberd" />
 </p>
 
 * **미리 학습된 사용자의 물체가 지정된 곳에 위치하지 않으면 물건을 찾아 해당 지점으로 옮긴 뒤, 서버 DB에 동작 완료 메시지를 송신**
+
 ---
 
 ## ⚠️ 보완점 및 향후 과제
@@ -210,6 +302,6 @@
 | 이름 | 역할 | 담당 파트 |
 |----------|----------|----------|
 | 박준서 | 팀장, BE | DB, API 서버 설계 및 구축, RAG & LLM 혼합 알고리즘, LLM 프롬프트 작성 |
-| 이상현 | 부팀장, FE | 안드로이드 앱 개발, LLM 시스템 구성, 이벤트 감지 설계 |
+| 이상현 | 부팀장, FE |  |
 | 안해성 | Robotic Engineering | 로봇 AI 학습 및 제어, RAG 파이프라인 초기 개발  |
 | 김준기 | AI Develop | 엣지 AI 파이프라인 개발, YOLO 모델 학습·경량화, 이벤트 감지 구현 |
