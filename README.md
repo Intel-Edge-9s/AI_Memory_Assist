@@ -109,7 +109,7 @@ ARU 앱은 고령자 및 초기 치매 환자도 쉽게 사용할 수 있도록 
 ### 1. 홈 화면 및 사용 방법
 앱의 진입점으로, 사용자가 앱의 주요 기능(기억 찾기, 영상 확인, 루틴 알람 등)을 쉽게 이해하고 바로 접근할 수 있도록 안내합니다.
 <p align="center">
-  <img src="../images/tutorial.jpg" width="30%" alt="홈 화면 및 사용방법" />
+  <img src="./images/tutorial.jpg" width="30%" alt="홈 화면 및 사용방법" />
 </p>
 
 ---
@@ -122,8 +122,8 @@ LLM 및 RAG 기반으로 사용자의 문맥을 기억하여 대화형으로 정
     <td align="center"><b>과거 이동 기록 (타임라인) 추적</b></td>
   </tr>
   <tr>
-    <td><img src="../images/chat_image.jpg" width="300px" alt="물건 위치 확인"></td>
-    <td><img src="../images/chat_log.jpg" width="300px" alt="타임라인 추적"></td>
+    <td><img src="./images/chat_image.jpg" width="300px" alt="물건 위치 확인"></td>
+    <td><img src="./images/chat_log.jpg" width="300px" alt="타임라인 추적"></td>
   </tr>
 </table>
 
@@ -138,13 +138,13 @@ LLM 및 RAG 기반으로 사용자의 문맥을 기억하여 대화형으로 정
     <td align="center"><b>강력한 루틴 알람 발생</b></td>
   </tr>
   <tr>
-    <td><img src="../images/routine.jpg" width="220px" alt="루틴 목록"></td>
-    <td><img src="../images/new_routine.jpg" width="220px" alt="루틴 추천"></td>
-    <td><img src="../images/alert.jpg" width="220px" alt="알람 발생"></td>
+    <td><img src="./images/routine.jpg" width="220px" alt="루틴 목록"></td>
+    <td><img src="./images/new_routine.jpg" width="220px" alt="루틴 추천"></td>
+    <td><img src="./images/alert.jpg" width="220px" alt="알람 발생"></td>
   </tr>
   <tr>
     <td colspan="3" align="center">
-      <img src="../images/make_routine.jpg" width="220px" alt="루틴 추가/수정">
+      <img src="./images/make_routine.jpg" width="220px" alt="루틴 추가/수정">
       <br><b>루틴 추가 및 수정 화면</b>
     </td>
   </tr>
@@ -155,7 +155,7 @@ LLM 및 RAG 기반으로 사용자의 문맥을 기억하여 대화형으로 정
 ### 4. 물건 현황 모니터링
 엣지 디바이스와 통신하여 지갑, 약통, 열쇠, 리모컨 등 사용자가 자주 잃어버리는 핵심 물건들의 현재 상태와 위치(방 이름)를 실시간 그리드 형태로 한눈에 보여줍니다.
 <p align="center">
-  <img src="../images/objects.jpg" width="30%" alt="물건 현황" />
+  <img src="./images/objects.jpg" width="30%" alt="물건 현황" />
 </p>
 
 ---
@@ -168,8 +168,8 @@ LLM 및 RAG 기반으로 사용자의 문맥을 기억하여 대화형으로 정
     <td align="center"><b>과거 VOD 영상 확인</b></td>
   </tr>
   <tr>
-    <td><img src="../images/vod_realtime.jpg" width="300px" alt="실시간 영상"></td>
-    <td><img src="../images/vod_past.jpg" width="300px" alt="과거 영상"></td>
+    <td><img src="./images/vod_realtime.jpg" width="300px" alt="실시간 영상"></td>
+    <td><img src="./images/vod_past.jpg" width="300px" alt="과거 영상"></td>
   </tr>
 </table>
 
