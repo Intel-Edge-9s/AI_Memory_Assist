@@ -78,30 +78,6 @@
 
 ---
 
-## 📂 디렉토리 구조
-
-. <br>
-├── 📂 **[backend/](./backend)** <br>
-│&nbsp;&nbsp;&nbsp;└── 📄 amr_turtle_db_bakcup.sql <br>
-├── 📂 **[images/](./images)** <br>
-│&nbsp;&nbsp;&nbsp;└── 🖼 <br>
-├── 📂 **[motion_control/](./motion_control)** <br>
-│&nbsp;&nbsp;&nbsp;├── 📂 **[actuator/](./motion_control/actuator)** <br>
-│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📄 actuator.ino <br>
-│&nbsp;&nbsp;&nbsp;└── 📂 **[conveyor_belt/](./motion_control/conveyor_belt)** <br>
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── 📄 conveyor_belt.ino <br>
-├── 📂 **[qt_app/AFC_qt/](./qt_app/AFC_qt)** <br>
-│&nbsp;&nbsp;&nbsp;├── 📁 .qtcreator/ <br>
-│&nbsp;&nbsp;&nbsp;├── 📂 **[src/](./qt_app/AFC_qt/src)** <br>
-│&nbsp;&nbsp;&nbsp;├── 📄 CMakeLists.txt <br>
-│&nbsp;&nbsp;&nbsp;├── 📄 LICENSE <br>
-│&nbsp;&nbsp;&nbsp;└── 📄 package.xml <br>
-├── 📂 **[robot/](./robot)** <br>
-│&nbsp;&nbsp;&nbsp;└── 📄 agv_move_pub.py <br>
-└── 📄 [README.md](./README.md)
-
----
-
 ## 📱 안드로이드 애플리케이션 (ARU App)
 
 ARU 앱은 고령자 및 초기 치매 환자도 쉽게 사용할 수 있도록 직관적인 UI/UX로 설계되었습니다. Kotlin과 Jetpack Compose를 기반으로 개발되었으며, MVVM 아키텍처를 적용하여 안정적인 성능을 제공합니다.
